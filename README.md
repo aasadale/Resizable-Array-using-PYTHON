@@ -1,1 +1,1 @@
-# Resizable-Array-Python
+# Resizable-Array / Dynamic Array,Python
