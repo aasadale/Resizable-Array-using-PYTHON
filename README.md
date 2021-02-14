@@ -15,3 +15,7 @@
 5) **Delete_At_Last()**  This function will delete the last value of an array.
 
 6) **Shrink_Array()**    This function will delete the last value of an array. Suppose we have an array of lenght 16, in which we have elements till 8th index. Rest of the array                            is containing empty memory blocks. Suppose we again call the shrink function, it will delete the element at index 8 and here an empty memory block will                            be created. Now as element of 8th index is also deleted so half of the array is now empty containing empty memory blocks, So at this stage, array will                              shrink its size to half, and only return elements from 0 to 7th index which is of lenght 8. So this function will delete the last element of array and                              will shrink its size to half when half array is empty and half contains elements.
+
+7) **Is_Empty()**        It will simply check whether the array is empty or not.
+
+8) **Return_Array()**    It will return the array.
