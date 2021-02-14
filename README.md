@@ -10,7 +10,7 @@
 
 3) **Insert_At_End()**   Insert_At_End will inserts the value at last index.
 
-4) **Delete_At_First()** This function will delete the first value of an array.
+4) **Delete_At_First()** \n This function will delete the first value of an array.
 
 5) **Delete_At_Last()**  This function will delete the last value of an array.
 
