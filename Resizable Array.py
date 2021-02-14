@@ -1,13 +1,13 @@
 class Resizable_Array:
 
     def __init__(self):
-               #  initializing the pointers
+        #  initializing the pointers
         self.resz_array = [None] * 2   
         self.pointer = 0
         self.lenght_array = len(self.resz_array)
 
     # __________________________GROWING OF AN ARRAY___________________________________#
-             # ===== INSERTING VALUES IN ARRAY  ===== #
+            
     def Insert_Value(self, value):
 
         if self.pointer == self.lenght_array:
@@ -22,7 +22,7 @@ class Resizable_Array:
 
         self.resz_array[self.pointer] = value
         self.pointer += 1
-           #   =====  INSERTING VALUES AT FIRST =====  #
+        
     def Insert_At_First(self, value):
 
         self.first = len(self.resz_array) + 1
@@ -32,7 +32,7 @@ class Resizable_Array:
         for i in range(1, r + 1):
             self.first[i] = self.resz_array[i - 1]
         self.resz_array = self.first
-           #   =====  INSERTING VALUES AT END =====  #
+        
     def Insert_At_End(self, value):
 
         self.arr_lenght = len(self.resz_array) + 1
@@ -42,7 +42,7 @@ class Resizable_Array:
             self.End[i] = self.resz_array[i]
         self.End[r] = value
         self.resz_array = self.End
-          #    ===== CHECK IF THE ARRAY IS EMPTY OR NOT ===== #
+       
         
     def Is_Empty(self):
 
@@ -53,9 +53,9 @@ class Resizable_Array:
         else:
 
             return False
-          #   =====  DELETE THE VALUE AT FIRST INDEX =====   #   
+        
     def Delete_At_First(self):
-                    #  check if the array is empty or not 
+        
         if self.Is_Empty() == True:
 
             raise "Cannot delete item from empty array!"
@@ -67,9 +67,9 @@ class Resizable_Array:
             for i in range(0, r):
                 self.After_Del[i] = self.resz_array[i + 1]
             self.resz_array = self.After_Del
-          #   =====  DELETE THE VALUE AT LAST INDEX =====   # 
+            
     def Delete_At_End(self):
-               #  check if the array is empty or not 
+        
         if self.Is_Empty() == True:
                      
             raise "Cannot delete item from empty array!"
